@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 /**
  * Created by xubitao on 1/2/16.
  */
-public class DolphinExceptionResolver extends SimpleMappingExceptionResolver {
+public class LarkExceptionResolver extends SimpleMappingExceptionResolver {
 
     @Override
     protected ModelAndView doResolveException(HttpServletRequest request,

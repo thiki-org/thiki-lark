@@ -3,33 +3,33 @@ package org.thiki.lark.foundation.exceptions;
 /**
  * Created by 15031046 on 2016/1/11.
  */
-public class DolphinException extends RuntimeException {
+public class LarkException extends RuntimeException {
     private static final long serialVersionUID = -8485124144566222888L;
     protected String errorCode;
     protected Object object;
 
-    public DolphinException(Object object, String errorCode, String message) {
+    public LarkException(Object object, String errorCode, String message) {
         super(message);
         this.errorCode = errorCode;
         this.object = object;
     }
 
-    public DolphinException(String errorCode) {
+    public LarkException(String errorCode) {
         super(errorCode);
         this.errorCode = errorCode;
     }
 
-    public DolphinException(String errorCode, String message) {
+    public LarkException(String errorCode, String message) {
         super(message);
         this.errorCode = errorCode;
     }
 
-    public DolphinException(String errorCode, Throwable cause) {
+    public LarkException(String errorCode, Throwable cause) {
         super(errorCode, cause);
         this.errorCode = errorCode;
     }
 
-    public DolphinException(String errorCode, String message, Throwable cause) {
+    public LarkException(String errorCode, String message, Throwable cause) {
         super(message, cause);
         this.errorCode = errorCode;
     }

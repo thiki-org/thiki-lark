@@ -1,6 +1,6 @@
 package org.thiki.lark.foundation.response;
 
-import org.thiki.lark.foundation.assmbler.DolphinAssembler;
+import org.thiki.lark.foundation.assmbler.LarkAssembler;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.hateoas.ResourceSupport;
 import org.springframework.http.HttpEntity;
@@ -30,7 +30,7 @@ public class Response {
         this.httpStatus = httpStatus;
     }
 
-    public static HttpEntity<ResourceSupport> build(Object domain, DolphinAssembler resourceAssembler) {
+    public static HttpEntity<ResourceSupport> build(Object domain, LarkAssembler resourceAssembler) {
         Response response = new Response();
         ResourceSupport domainResource = resourceAssembler.toResource(domain, new Integer[0]);
         ResourceSupport resource = new ResourceSupport();
@@ -38,7 +38,7 @@ public class Response {
         return new ResponseEntity<ResourceSupport>(response.getRestResource(), response.getHttpStatus());
     }
 
-    public static HttpEntity<ResourceSupport> build(Object domain, DolphinAssembler resourceAssembler, Object... pathOrRequestVariables) {
+    public static HttpEntity<ResourceSupport> build(Object domain, LarkAssembler resourceAssembler, Object... pathOrRequestVariables) {
         Response response = new Response();
         ResourceSupport domainResource = resourceAssembler.toResource(domain, pathOrRequestVariables);
         ResourceSupport resource = new ResourceSupport();

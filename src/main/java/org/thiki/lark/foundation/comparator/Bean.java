@@ -1,6 +1,6 @@
 package org.thiki.lark.foundation.comparator;
 
-import org.thiki.lark.foundation.exceptions.DolphinException;
+import org.thiki.lark.foundation.exceptions.LarkException;
 import com.alibaba.fastjson.JSONObject;
 
 import java.lang.reflect.Field;
@@ -35,7 +35,7 @@ public class Bean {
         try {
             return MapComparator.compare(beforeItem, afterItem, excludeFields, true);
         } catch (Exception e) {
-            throw new DolphinException(e.getCause().toString());
+            throw new LarkException(e.getCause().toString());
         }
     }
     /**
@@ -62,7 +62,7 @@ public class Bean {
             jsonObject.remove("success");
         }
         if (jsonObject.isEmpty()) {
-            throw new DolphinException(dataObject + "转出后的Map是空的");
+            throw new LarkException(dataObject + "转出后的Map是空的");
         }
         Field[] fields = dataObject.getClass().getDeclaredFields();
         try {
