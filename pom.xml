@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.xubitao</groupId>
-    <artifactId>dolphin</artifactId>
+    <groupId>org.thiki</groupId>
+    <artifactId>lark</artifactId>
     <version>1.0-release</version>
-    <name>dolphin</name>
+    <name>lark</name>
     <description>A common jar for my other projects to use.</description>
     <url>https://github.com/xubitao/dolphin</url>
     <licenses>
@@ -23,7 +23,7 @@
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/xubitao/dolphin.git</url>
+        <url>https://github.com/thiki-org/thiki-lark.git</url>
     </scm>
     <dependencies>
         <dependency>
