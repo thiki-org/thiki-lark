@@ -9,7 +9,7 @@
     <version>1.0-release</version>
     <name>lark</name>
     <description>A common jar for my other projects to use.</description>
-    <url>https://github.com/xubitao/dolphin</url>
+    <url>https://github.com/thiki-org/thiki-lark</url>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
