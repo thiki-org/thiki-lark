@@ -38,12 +38,8 @@ public class Bean {
             throw new LarkException(e.getCause().toString());
         }
     }
-    /**
-     * 将目标数据对象转换为Map
-     *
-     * @param dataObject
-     * @return Map对象
-     */
+
+
     public static Map<String, Object> toMap(Object dataObject) {
         if (dataObject == null) {
             return null;
